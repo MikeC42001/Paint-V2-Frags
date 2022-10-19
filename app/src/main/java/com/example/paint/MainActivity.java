@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
                     .add(R.id.fragmentContainerView, BlankFragment.class, null)
                     .commit();
         }
-        setContentView(R.layout.activity_paint_main);
+        setContentView(R.layout.activity_main);
         setBackGroundColor(this.getCurrentFocus());
 
     }
