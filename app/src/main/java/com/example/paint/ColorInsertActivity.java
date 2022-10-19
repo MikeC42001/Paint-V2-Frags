@@ -27,7 +27,7 @@ public class ColorInsertActivity extends AppCompatActivity {
     }
 
     public void goBack(View view) {
-        Intent intent = new Intent(this, SettingsActivity.class);
+        Intent intent = new Intent(this, PaintMainActivity.class);
         startActivity(intent);
     }
 }

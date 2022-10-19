@@ -11,7 +11,14 @@ public class PaintMainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .setReorderingAllowed(true)
+                    .add(R.id.fragmentContainerView, BlankFragment.class, null)
+                    .commit();
+        }
         setContentView(R.layout.activity_paint_main);
+
     }
 
     /** Called when the user taps the Send button */
@@ -21,7 +28,7 @@ public class PaintMainActivity extends AppCompatActivity {
     }
 
     public void sendToSettings(View view) {
-        Intent intent = new Intent(this, SettingsActivity.class);
+        Intent intent = new Intent(this, ColorInsertActivity.class);
         startActivity(intent);
     }
 

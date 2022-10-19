@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         //this.getWindow().getDecorView().setBackgroundColor(R.color.teal_200);
         setBackGroundColor(this.getCurrentFocus());
 
+
     }
 
     /** Called when the user taps the Send button */
