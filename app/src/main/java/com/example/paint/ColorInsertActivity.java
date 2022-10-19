@@ -1,5 +1,7 @@
 package com.example.paint;
 
+import static android.graphics.Color.parseColor;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -21,13 +23,13 @@ public class ColorInsertActivity extends AppCompatActivity {
     public void setMainBackgroundColor(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         EditText editText = (EditText) findViewById(R.id.editTextTextPersonColor);
-        String message = editText.getText().toString();
+        int message = parseColor(editText.getText().toString());
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
 
     public void goBack(View view) {
-        Intent intent = new Intent(this, PaintMainActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }
