@@ -10,10 +10,9 @@
     <string name="fst_member">Miguel Costa - fc54431</string>
     <string name="snd_member">André Mendes - fc54459</string>
     <string name="trd_member">\?????????</string>
-    <string name="change_bgc_button">Change Main Color</string>
+    <string name="change_bgc_button">Change Color</string>
     <string name="input_color_msg">Insert Color (ex. white, black)</string>
     <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
@@ -21,6 +20,5 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
-    <string name="ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</string>
     <string name="button">Button</string>
 </resources>

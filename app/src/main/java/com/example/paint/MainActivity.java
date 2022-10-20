@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import com.example.paint.ui.login.PaletteFragment;
+
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
@@ -16,12 +18,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction()
-                    .setReorderingAllowed(true)
-                    .add(R.id.fragmentContainerView, BlankFragment.class, null)
-                    .commit();
-        }
+        //if (savedInstanceState == null) {
+        getSupportFragmentManager().beginTransaction()
+                .setReorderingAllowed(true)
+                .add(R.id.fragmentContainerView, BlankFragment.class, null)
+                .commit();
+        getSupportFragmentManager().beginTransaction()
+                .setReorderingAllowed(true)
+                .add(R.id.fragmentContainerView2, PaletteFragment.class, null)
+                .commit();
+        //}
         setContentView(R.layout.activity_main);
         setBackGroundColor(this.getCurrentFocus());
 
@@ -53,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = getIntent();
             if (intent.hasExtra(EXTRA_MESSAGE)) {
                 message = intent.getIntExtra(EXTRA_MESSAGE, -1);
-                Log.d(TAG, "setBackGroundColor: " + message);
+                //Log.d(TAG, "setBackGroundColor: " + message);
                 view = this.getWindow().getDecorView();
                 view.setBackgroundColor(message);
             }
