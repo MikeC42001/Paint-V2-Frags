@@ -61,7 +61,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView2"
-        android:name="com.example.paint.ui.login.PaletteFragment"
+        android:name="com.example.paint.PaletteFragment"
         android:layout_width="327dp"
         android:layout_height="344dp"
         app:layout_constraintBottom_toBottomOf="parent"

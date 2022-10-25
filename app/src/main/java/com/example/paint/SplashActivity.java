@@ -18,10 +18,6 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_splash);
-        //this.getWindow().getDecorView().setBackgroundColor(R.color.teal_200);
-
-
-
     }
 
     /** Called when the user taps the Send button */

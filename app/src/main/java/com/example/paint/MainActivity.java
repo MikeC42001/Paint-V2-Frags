@@ -5,10 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-
-import com.example.paint.ui.login.PaletteFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,11 +38,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void sendToSettings(View view) {
         Intent intent = new Intent(this, ColorInsertActivity.class);
-        startActivity(intent);
-    }
-
-    public void goBack(View view) {
-        Intent intent = new Intent(this, SplashActivity.class);
         startActivity(intent);
     }
 
